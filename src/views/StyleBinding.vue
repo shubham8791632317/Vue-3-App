@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>Welcome to Html Binding Home Page</h1>
+      <h1>Welcome to Style Binding Home Page</h1>
       <hr>
       <br><br>
       <div v-html="name"></div> <!-- This is called html binding -->
@@ -10,11 +10,10 @@
 
 <script>
 export default {
-    name: "HtmlBinding",
+    name: "StyleBinding",
     data(){
       return{
-        name: "<b>Shubham Singh is a good boy.</b>",
-        city: "<strong><em>Dehradun is a beautiful city</em></strong>"
+        
       }
     }
 }
