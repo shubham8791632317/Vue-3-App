@@ -4,6 +4,9 @@ import HtmlBinding from '../views/HtmlBinding';
 import AttributeBinding from '../views/AttributeBinding';
 import ClassBinding from '../views/ClassBinding';
 import StyleBinding from '../views/StyleBinding';
+import ConditionalRendering from '../views/ConditionalRendering';
+import ListRendering from '../views/ListRendering';
+import YblEkycForm from '../components/YblEkycForm';
 import PageNotFound from '../views/PageNotFound';
 const routes = [
     {
@@ -26,14 +29,26 @@ const routes = [
       name: 'ClassBinding',
       component: ClassBinding
     },
-      {
-        path: '/style-binding',
-        name: 'StyleBinding',
-        component: StyleBinding
-      },
-    
-
-
+    {
+      path: '/style-binding',
+      name: 'StyleBinding',
+      component: StyleBinding
+    },
+    {
+      path: '/conditionl-rendering',
+      name: 'ConditionalRendering',
+      component: ConditionalRendering
+    },
+    {
+      path: '/list-rendering',
+      name: 'ListRendering',
+      component: ListRendering
+    },
+    {
+      path: '/ybl-ekyc',
+      name: 'YblEKyc',
+      component: YblEkycForm
+    },
 
    //Page Not Found Redirection
     {

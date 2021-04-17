@@ -3,7 +3,9 @@
         <h1>404</h1>
         <h2>Sorry, Page Not Found</h2>
         <br><br>
+        <div class="redirectbtn">
         <button @click="redirectHomePage">Redirect to Home Page</button>
+        </div>
     </div>
 </template>
 
@@ -30,16 +32,20 @@ export default {
         font-family: cursive;
     }
     button{
-        border-radius: 20px;
-        background: rgb(238, 139, 189);
-        color: white;
+        border-radius: 30px;
+        background: rgb(240, 182, 117);
+        color: black;
         font-weight: bold;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 10px;
     }
     button:hover{
-        background: rgb(139, 58, 58);
+        background: rgb(125, 202, 160);
     }
     button:focus{
         outline: none;
+    }
+    .redirectbtn{
+        text-align: center;
     }
 </style>
